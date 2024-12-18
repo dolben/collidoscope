@@ -29,7 +29,7 @@ public class PlatonicGas extends Collidoscope {
         for ( int i = 0; i < 3; i++ ) {
             volume *= 2*limit[i];
         }
-        /* V = 4/3 ¹ r^3; r = 3/4/¹ V^(1/3) */
+        /* V = 4/3 Ï€ r^3; r = 3/4/Ï€ V^(1/3) */
         double radius = Math.pow((3/4.0)/Math.PI*volume,1/3.0);
         initBody(new ShadedFaces(new Tetrahedron (),Color.magenta),radius);
         initBody(new ShadedFaces(new Cube        (),Color.orange ),radius);
